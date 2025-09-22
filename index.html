@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RizqFlow - Ultra Luxury Futures</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+  body {
+    margin: 0; 
+    background: #000; 
+    color: #eee; 
+    font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 40px 20px; 
+    text-align: center; 
+    position: relative;
+  }
+  h1 {
+    font-size: 4rem;
+    color: #0ff; /* Neon Blue */
+    text-shadow:
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 30px #00f,
+      0 0 40px #f00;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #f33;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 7px #f33;
+    margin-bottom: 40px;
+  }
+  .btn-neon {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border: 2px solid #0ff;
+    background: transparent;
+    color: #0ff;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+    box-shadow:
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #0ff;
+  }
+  .btn-neon:hover {
+    background: #0ff;
+    color: #000;
+    box-shadow:
+      0 0 20px #0ff,
+      0 0 30px #0ff,
+      0 0 50px #0ff,
+      0 0 60px #f00;
+  }
+  .glitch {
+    color: #0ff;
+    font-weight: 900;
+    font-size: 3rem;
+    position: relative;
+    animation: glitchAnim 2s infinite;
+    letter-spacing: 3px;
+  }
+  .glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+  }
+  .glitch::before {
+    animation: glitchBefore 2s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    color: #f00;
+  }
+  .glitch::after {
+    animation: glitchAfter 2s infinite;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    color: #00f;
+  }
+  @keyframes glitchAnim {
+    0%, 100% {transform: translate(0);}
+    20%, 60% {transform: translate(-2px, 2px);}
+    40%, 80% {transform: translate(2px, -2px);}
+  }
+  @keyframes glitchBefore {
+    0%, 100% {transform: translate(0);}
+    20%, 60% {transform: translate(-3px, -2px);}
+    40%, 80% {transform: translate(3px, 2px);}
+  }
+  @keyframes glitchAfter {
+    0%, 100% {transform: translate(0);}
+    20%, 60% {transform: translate(3px, 2px);}
+    40%, 80% {transform: translate(-3px, -2px);}
+  }
+  .footer {
+    padding: 20px 0;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    border-top: 1px solid #222;
+    margin-top: 80px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="glitch" data-text="RIZQ FLOW">RIZQ FLOW</h1>
+    <h2>Ultra Luxury Futures @rizqflow</h2>
+    <button class="btn-neon">Discover More</button>
+  </div>
+  <div class="footer">
+    &copy; 2025 RizqFlow. All rights reserved.
+  </div>
+</body>
+</html>
